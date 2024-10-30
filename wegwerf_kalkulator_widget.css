@@ -1,0 +1,51 @@
+* { box-sizing: border-box; }
+.wgorg_autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: block;
+  font-size: 15px;
+}
+.wgorg_autocomplete input {
+  border: 2px solid transparent;
+  background-color: #DDDDDD;
+  font-size: 16px;
+  height: auto;
+  width: 100%;
+}
+.wgorg_autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.wgorg_autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.wgorg_autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.wgorg_autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+.wgorg_calculate-furniture-button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background-color: #49B084;
+    align-self: center;
+}
+.wgorg_calculate-furniture-button:hover {
+    background: #49B084;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
